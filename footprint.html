@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_809a6ec438d204a2ad2c806630d1f42a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_809a6ec438d204a2ad2c806630d1f42a" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_809a6ec438d204a2ad2c806630d1f42a = L.map(
+                "map_809a6ec438d204a2ad2c806630d1f42a",
+                {
+                    center: [0.0, 19.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 2.75,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_beb7029b015739006bfdeb987078b138 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_809a6ec438d204a2ad2c806630d1f42a);
+        
+    
+            var circle_marker_eb498ef14d25f5570428d8410885f96b = L.circleMarker(
+                [-8.934299, 125.393055],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "mediumseagreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.0, "stroke": true, "weight": 3}
+            ).addTo(map_809a6ec438d204a2ad2c806630d1f42a);
+        
+    
+        var popup_27de9fd4d8cfded9ee3d8623d0e79ce2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f653ed072eb8651487d5dfdadcf88e16 = $(`<div id="html_f653ed072eb8651487d5dfdadcf88e16" style="width: 100.0%; height: 100.0%;">Atsabe: 17kg @ 11,70€/kg</div>`)[0];
+                popup_27de9fd4d8cfded9ee3d8623d0e79ce2.setContent(html_f653ed072eb8651487d5dfdadcf88e16);
+            
+        
+
+        circle_marker_eb498ef14d25f5570428d8410885f96b.bindPopup(popup_27de9fd4d8cfded9ee3d8623d0e79ce2)
+        ;
+
+        
+    
+    
+            var circle_marker_c510aec4f5e238cf5a7b1febaa7c7c37 = L.circleMarker(
+                [14.562289, -90.762839],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "mediumseagreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.0, "stroke": true, "weight": 3}
+            ).addTo(map_809a6ec438d204a2ad2c806630d1f42a);
+        
+    
+        var popup_e4e619d0dc1b576d548916c9ed464db9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9e5c9550f203e80937b7587ff4c91ea7 = $(`<div id="html_9e5c9550f203e80937b7587ff4c91ea7" style="width: 100.0%; height: 100.0%;">Bella Vista: 176kg @ 10,40€/kg</div>`)[0];
+                popup_e4e619d0dc1b576d548916c9ed464db9.setContent(html_9e5c9550f203e80937b7587ff4c91ea7);
+            
+        
+
+        circle_marker_c510aec4f5e238cf5a7b1febaa7c7c37.bindPopup(popup_e4e619d0dc1b576d548916c9ed464db9)
+        ;
+
+        
+    
+    
+            var circle_marker_127169f4371ae76ed5b4981742c397b5 = L.circleMarker(
+                [-21.350519, -45.540274],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "mediumseagreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 76.0, "stroke": true, "weight": 3}
+            ).addTo(map_809a6ec438d204a2ad2c806630d1f42a);
+        
+    
+        var popup_3303e21ddbdc0b32bef0b73d021dda76 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a79b72b6b06296787ecdbf0ca1fde43e = $(`<div id="html_a79b72b6b06296787ecdbf0ca1fde43e" style="width: 100.0%; height: 100.0%;">Cafeina: 11400kg @ 5,29€</div>`)[0];
+                popup_3303e21ddbdc0b32bef0b73d021dda76.setContent(html_a79b72b6b06296787ecdbf0ca1fde43e);
+            
+        
+
+        circle_marker_127169f4371ae76ed5b4981742c397b5.bindPopup(popup_3303e21ddbdc0b32bef0b73d021dda76)
+        ;
+
+        
+    
+    
+            var circle_marker_570af541f4d4779a45f17e7bc70b2713 = L.circleMarker(
+                [3.179585, -75.551688],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "mediumseagreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 22.0, "stroke": true, "weight": 3}
+            ).addTo(map_809a6ec438d204a2ad2c806630d1f42a);
+        
+    
+        var popup_fe102b285dac4fc558ed46a62ab47a69 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f13236ca47bdeb44ba68b29e68fcb618 = $(`<div id="html_f13236ca47bdeb44ba68b29e68fcb618" style="width: 100.0%; height: 100.0%;">Hernan Montano: 997kg @ 10,57€/kg: </div>`)[0];
+                popup_fe102b285dac4fc558ed46a62ab47a69.setContent(html_f13236ca47bdeb44ba68b29e68fcb618);
+            
+        
+
+        circle_marker_570af541f4d4779a45f17e7bc70b2713.bindPopup(popup_fe102b285dac4fc558ed46a62ab47a69)
+        ;
+
+        
+    
+    
+            var circle_marker_3ae19b2e5d611d4f6edc33d819b0e736 = L.circleMarker(
+                [-13.51131, -71.924204],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "mediumseagreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(map_809a6ec438d204a2ad2c806630d1f42a);
+        
+    
+        var popup_3c1d996ac19a57c3afb19fddbb9ba3fd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b866136489eacfacee8faf6f14ec4e6f = $(`<div id="html_b866136489eacfacee8faf6f14ec4e6f" style="width: 100.0%; height: 100.0%;">Hugo Mariño: 30kg @ 32,20€/kg</div>`)[0];
+                popup_3c1d996ac19a57c3afb19fddbb9ba3fd.setContent(html_b866136489eacfacee8faf6f14ec4e6f);
+            
+        
+
+        circle_marker_3ae19b2e5d611d4f6edc33d819b0e736.bindPopup(popup_3c1d996ac19a57c3afb19fddbb9ba3fd)
+        ;
+
+        
+    
+    
+            var circle_marker_64e517781eb296a218ba27732576be2d = L.circleMarker(
+                [7.870844, 36.589861],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "mediumseagreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20.0, "stroke": true, "weight": 3}
+            ).addTo(map_809a6ec438d204a2ad2c806630d1f42a);
+        
+    
+        var popup_40d1556ec08e7ae7f47b51a220ab025a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3f785e7f6a05e295cfe6f0ca6b30f965 = $(`<div id="html_3f785e7f6a05e295cfe6f0ca6b30f965" style="width: 100.0%; height: 100.0%;">Hunda Oli: 720kg @ 6,21€/kg</div>`)[0];
+                popup_40d1556ec08e7ae7f47b51a220ab025a.setContent(html_3f785e7f6a05e295cfe6f0ca6b30f965);
+            
+        
+
+        circle_marker_64e517781eb296a218ba27732576be2d.bindPopup(popup_40d1556ec08e7ae7f47b51a220ab025a)
+        ;
+
+        
+    
+    
+            var circle_marker_a51eaa5e4e43743a0a32bbc36990d6df = L.circleMarker(
+                [9.750881, -84.052937],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "mediumseagreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.8, "stroke": true, "weight": 3}
+            ).addTo(map_809a6ec438d204a2ad2c806630d1f42a);
+        
+    
+        var popup_29717165c268e67b4b04d4eddaf6092c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_268949ef2c3669607151f5049d07787a = $(`<div id="html_268949ef2c3669607151f5049d07787a" style="width: 100.0%; height: 100.0%;">Idaly Calderon: 134kg @ 14,47€/kg</div>`)[0];
+                popup_29717165c268e67b4b04d4eddaf6092c.setContent(html_268949ef2c3669607151f5049d07787a);
+            
+        
+
+        circle_marker_a51eaa5e4e43743a0a32bbc36990d6df.bindPopup(popup_29717165c268e67b4b04d4eddaf6092c)
+        ;
+
+        
+    
+    
+            var circle_marker_bbdf6858578d2f147b5827b2f9904b74 = L.circleMarker(
+                [-2.905747, 29.482266],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "mediumseagreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 19.2, "stroke": true, "weight": 3}
+            ).addTo(map_809a6ec438d204a2ad2c806630d1f42a);
+        
+    
+        var popup_aabf138436885badee7f55c8d103b27d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_31c71018f9617d58f750ad37a95fd879 = $(`<div id="html_31c71018f9617d58f750ad37a95fd879" style="width: 100.0%; height: 100.0%;">Izuba: 540kg @ 9€/kg</div>`)[0];
+                popup_aabf138436885badee7f55c8d103b27d.setContent(html_31c71018f9617d58f750ad37a95fd879);
+            
+        
+
+        circle_marker_bbdf6858578d2f147b5827b2f9904b74.bindPopup(popup_aabf138436885badee7f55c8d103b27d)
+        ;
+
+        
+    
+    
+            var circle_marker_283549ef4db42886e9ed6b1807d07d89 = L.circleMarker(
+                [8.0, 39.0],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "mediumseagreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 24.0, "stroke": true, "weight": 3}
+            ).addTo(map_809a6ec438d204a2ad2c806630d1f42a);
+        
+    
+        var popup_f756973f65708f0994fa563b8356e7d0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a44f0ee43d6e6954149824b6d73ed71e = $(`<div id="html_a44f0ee43d6e6954149824b6d73ed71e" style="width: 100.0%; height: 100.0%;">Jabanto Group: 1145kg @ 9,90€/kg</div>`)[0];
+                popup_f756973f65708f0994fa563b8356e7d0.setContent(html_a44f0ee43d6e6954149824b6d73ed71e);
+            
+        
+
+        circle_marker_283549ef4db42886e9ed6b1807d07d89.bindPopup(popup_f756973f65708f0994fa563b8356e7d0)
+        ;
+
+        
+    
+    
+            var circle_marker_497dc14cad0248b718b7b72d83c03d53 = L.circleMarker(
+                [9.81667, 37.08333],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "mediumseagreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 32.2, "stroke": true, "weight": 3}
+            ).addTo(map_809a6ec438d204a2ad2c806630d1f42a);
+        
+    
+        var popup_b912376594591cf7aacb63876a117c71 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1a4b42a429d907744ef0105e407c0e9d = $(`<div id="html_1a4b42a429d907744ef0105e407c0e9d" style="width: 100.0%; height: 100.0%;">Jiratamo: 2023kg @ 5,70€/kg</div>`)[0];
+                popup_b912376594591cf7aacb63876a117c71.setContent(html_1a4b42a429d907744ef0105e407c0e9d);
+            
+        
+
+        circle_marker_497dc14cad0248b718b7b72d83c03d53.bindPopup(popup_b912376594591cf7aacb63876a117c71)
+        ;
+
+        
+    
+    
+            var circle_marker_bf099e3397c6bd094a446840da3a908f = L.circleMarker(
+                [-0.490283, 36.95795],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "mediumseagreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.199999999999999, "stroke": true, "weight": 3}
+            ).addTo(map_809a6ec438d204a2ad2c806630d1f42a);
+        
+    
+        var popup_67c2d20f9fe9318ecc06ac8a4b97ed1e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5f9626f73bac86488786b2d2b3b981db = $(`<div id="html_5f9626f73bac86488786b2d2b3b981db" style="width: 100.0%; height: 100.0%;">Kiandu: 90kg @ 12,70kg</div>`)[0];
+                popup_67c2d20f9fe9318ecc06ac8a4b97ed1e.setContent(html_5f9626f73bac86488786b2d2b3b981db);
+            
+        
+
+        circle_marker_bf099e3397c6bd094a446840da3a908f.bindPopup(popup_67c2d20f9fe9318ecc06ac8a4b97ed1e)
+        ;
+
+        
+    
+    
+            var circle_marker_942937eeafad65b048644050a3dc0ef5 = L.circleMarker(
+                [-0.446917, 37.389356],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "mediumseagreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.0, "stroke": true, "weight": 3}
+            ).addTo(map_809a6ec438d204a2ad2c806630d1f42a);
+        
+    
+        var popup_3e3143581496327f93066fa46f665fc9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_059be146c6584c876f2db6643276fb12 = $(`<div id="html_059be146c6584c876f2db6643276fb12" style="width: 100.0%; height: 100.0%;">Kii: 120kg @ 12,90€/kg</div>`)[0];
+                popup_3e3143581496327f93066fa46f665fc9.setContent(html_059be146c6584c876f2db6643276fb12);
+            
+        
+
+        circle_marker_942937eeafad65b048644050a3dc0ef5.bindPopup(popup_3e3143581496327f93066fa46f665fc9)
+        ;
+
+        
+    
+    
+            var circle_marker_97d8a9daa4317dd1b38be5e2db89a07e = L.circleMarker(
+                [-2.249763, 29.188545],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "mediumseagreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.0, "stroke": true, "weight": 3}
+            ).addTo(map_809a6ec438d204a2ad2c806630d1f42a);
+        
+    
+        var popup_18248c89728ab6cbb6e1461b34cf5c34 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7a78c4b7ed8a994d50c2c8c9cc50f767 = $(`<div id="html_7a78c4b7ed8a994d50c2c8c9cc50f767" style="width: 100.0%; height: 100.0%;">Kilimbi: 120kg @ 10,70€/kg</div>`)[0];
+                popup_18248c89728ab6cbb6e1461b34cf5c34.setContent(html_7a78c4b7ed8a994d50c2c8c9cc50f767);
+            
+        
+
+        circle_marker_97d8a9daa4317dd1b38be5e2db89a07e.bindPopup(popup_18248c89728ab6cbb6e1461b34cf5c34)
+        ;
+
+        
+    
+    
+            var circle_marker_b86ad78f6b3fc61bae50512ab1893824 = L.circleMarker(
+                [1.766878, -76.116591],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "mediumseagreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.0, "stroke": true, "weight": 3}
+            ).addTo(map_809a6ec438d204a2ad2c806630d1f42a);
+        
+    
+        var popup_2005ba35eb6a40d5c78cf94eb4060e96 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_44fcec06a59f2fd1c7cf170030576670 = $(`<div id="html_44fcec06a59f2fd1c7cf170030576670" style="width: 100.0%; height: 100.0%;">Luis Alberto: 264kg @ 11,50€/kg</div>`)[0];
+                popup_2005ba35eb6a40d5c78cf94eb4060e96.setContent(html_44fcec06a59f2fd1c7cf170030576670);
+            
+        
+
+        circle_marker_b86ad78f6b3fc61bae50512ab1893824.bindPopup(popup_2005ba35eb6a40d5c78cf94eb4060e96)
+        ;
+
+        
+    
+    
+            var circle_marker_2a772b88f6bacd48c368b4b512441929 = L.circleMarker(
+                [8.496109, -9.454314],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "mediumseagreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.600000000000001, "stroke": true, "weight": 3}
+            ).addTo(map_809a6ec438d204a2ad2c806630d1f42a);
+        
+    
+        var popup_8652112f39444f9e5026dc40d58203d3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_216f571e40d13d7423b006104c726ba3 = $(`<div id="html_216f571e40d13d7423b006104c726ba3" style="width: 100.0%; height: 100.0%;">Macenta Beans: 460kg @ 8,50€/kg</div>`)[0];
+                popup_8652112f39444f9e5026dc40d58203d3.setContent(html_216f571e40d13d7423b006104c726ba3);
+            
+        
+
+        circle_marker_2a772b88f6bacd48c368b4b512441929.bindPopup(popup_8652112f39444f9e5026dc40d58203d3)
+        ;
+
+        
+    
+    
+            var circle_marker_657d56c43d23f368f29cae2ce0a49860 = L.circleMarker(
+                [-5.6495, -78.914057],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "mediumseagreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.8, "stroke": true, "weight": 3}
+            ).addTo(map_809a6ec438d204a2ad2c806630d1f42a);
+        
+    
+        var popup_2e526bb7df38ae82c8ac707906320c8e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_302275fee451b07a4d16fd941485094d = $(`<div id="html_302275fee451b07a4d16fd941485094d" style="width: 100.0%; height: 100.0%;">Maribel Herrera: 207kg @ 9,10€/kg</div>`)[0];
+                popup_2e526bb7df38ae82c8ac707906320c8e.setContent(html_302275fee451b07a4d16fd941485094d);
+            
+        
+
+        circle_marker_657d56c43d23f368f29cae2ce0a49860.bindPopup(popup_2e526bb7df38ae82c8ac707906320c8e)
+        ;
+
+        
+    
+    
+            var circle_marker_99b72db26939c583e1fd4e75278c189d = L.circleMarker(
+                [7.795951, 36.471495],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "mediumseagreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 22.0, "stroke": true, "weight": 3}
+            ).addTo(map_809a6ec438d204a2ad2c806630d1f42a);
+        
+    
+        var popup_606e2f598765106784d5b4b8c69686f6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e95d96840473ecbfbd6cf952b48421f6 = $(`<div id="html_e95d96840473ecbfbd6cf952b48421f6" style="width: 100.0%; height: 100.0%;">Mustefa Abakeno: 960kg @ 9,70€/kg</div>`)[0];
+                popup_606e2f598765106784d5b4b8c69686f6.setContent(html_e95d96840473ecbfbd6cf952b48421f6);
+            
+        
+
+        circle_marker_99b72db26939c583e1fd4e75278c189d.bindPopup(popup_606e2f598765106784d5b4b8c69686f6)
+        ;
+
+        
+    
+    
+            var circle_marker_401ca20a7568971988fdd73c9b8883c4 = L.circleMarker(
+                [19.253614, -96.942033],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "mediumseagreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.2, "stroke": true, "weight": 3}
+            ).addTo(map_809a6ec438d204a2ad2c806630d1f42a);
+        
+    
+        var popup_5d75c86d6b2d0885fc9d2903c39f1115 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_318f0c19f944ce197d7c23d335783197 = $(`<div id="html_318f0c19f944ce197d7c23d335783197" style="width: 100.0%; height: 100.0%;">Ombligo de Luna: 70kg @ 9,90€/kg</div>`)[0];
+                popup_5d75c86d6b2d0885fc9d2903c39f1115.setContent(html_318f0c19f944ce197d7c23d335783197);
+            
+        
+
+        circle_marker_401ca20a7568971988fdd73c9b8883c4.bindPopup(popup_5d75c86d6b2d0885fc9d2903c39f1115)
+        ;
+
+        
+    
+    
+            var circle_marker_499b3cd3be428f9eca1e7541463b878e = L.circleMarker(
+                [3.225101, -75.71612],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "mediumseagreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18.799999999999997, "stroke": true, "weight": 3}
+            ).addTo(map_809a6ec438d204a2ad2c806630d1f42a);
+        
+    
+        var popup_a33438efa0e646cc14cfa75797f2fcab = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9c96d9db8a35614ef900cd067bda9d8f = $(`<div id="html_9c96d9db8a35614ef900cd067bda9d8f" style="width: 100.0%; height: 100.0%;">Passiflora: 681kg @ 8,20€/kg</div>`)[0];
+                popup_a33438efa0e646cc14cfa75797f2fcab.setContent(html_9c96d9db8a35614ef900cd067bda9d8f);
+            
+        
+
+        circle_marker_499b3cd3be428f9eca1e7541463b878e.bindPopup(popup_a33438efa0e646cc14cfa75797f2fcab)
+        ;
+
+        
+    
+    
+            var circle_marker_0a6ef2d1ecbe2286fb0cfe66ba92d6a6 = L.circleMarker(
+                [-20.938166, -44.911213],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "mediumseagreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 29.8, "stroke": true, "weight": 3}
+            ).addTo(map_809a6ec438d204a2ad2c806630d1f42a);
+        
+    
+        var popup_84b3c99c01e15e8cf5df039b30d79f99 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_111e9031624e68b5db38830857c0c3f0 = $(`<div id="html_111e9031624e68b5db38830857c0c3f0" style="width: 100.0%; height: 100.0%;">Sancoffee: 1738kg @ 6,30€/kg</div>`)[0];
+                popup_84b3c99c01e15e8cf5df039b30d79f99.setContent(html_111e9031624e68b5db38830857c0c3f0);
+            
+        
+
+        circle_marker_0a6ef2d1ecbe2286fb0cfe66ba92d6a6.bindPopup(popup_84b3c99c01e15e8cf5df039b30d79f99)
+        ;
+
+        
+    
+    
+            var circle_marker_9d57330bd5e8dcddbcde951b3da093d3 = L.circleMarker(
+                [18.272414, -96.766797],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "mediumseagreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.8, "stroke": true, "weight": 3}
+            ).addTo(map_809a6ec438d204a2ad2c806630d1f42a);
+        
+    
+        var popup_e5b4252959040a15152351f5eec0d6f8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b21476b749a7da5a7fa099ebdc75a992 = $(`<div id="html_b21476b749a7da5a7fa099ebdc75a992" style="width: 100.0%; height: 100.0%;">Sierra Mazateca: 205kg @ 7,40€/kg</div>`)[0];
+                popup_e5b4252959040a15152351f5eec0d6f8.setContent(html_b21476b749a7da5a7fa099ebdc75a992);
+            
+        
+
+        circle_marker_9d57330bd5e8dcddbcde951b3da093d3.bindPopup(popup_e5b4252959040a15152351f5eec0d6f8)
+        ;
+
+        
+    
+    
+            var circle_marker_4db5c66ebae802da64a6ff7acb181b25 = L.circleMarker(
+                [5.758985, 38.892622],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "mediumseagreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 33.0, "stroke": true, "weight": 3}
+            ).addTo(map_809a6ec438d204a2ad2c806630d1f42a);
+        
+    
+        var popup_aa5c9b2afc7e7e40bcec877288cef432 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5f90f679ece29872f38448e124e6c5e2 = $(`<div id="html_5f90f679ece29872f38448e124e6c5e2" style="width: 100.0%; height: 100.0%;">Sookoo Group: 2172kg @ 11,30€/kg</div>`)[0];
+                popup_aa5c9b2afc7e7e40bcec877288cef432.setContent(html_5f90f679ece29872f38448e124e6c5e2);
+            
+        
+
+        circle_marker_4db5c66ebae802da64a6ff7acb181b25.bindPopup(popup_aa5c9b2afc7e7e40bcec877288cef432)
+        ;
+
+        
+    
+    
+            var circle_marker_3cb9fd2cb148ca9adc87a205ffeaffd7 = L.circleMarker(
+                [-1.696206, 29.027759],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "mediumseagreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.0, "stroke": true, "weight": 3}
+            ).addTo(map_809a6ec438d204a2ad2c806630d1f42a);
+        
+    
+        var popup_2e339276a0d51011c9302cf611e79f92 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cd69a369634af836fca3f86d6adf5399 = $(`<div id="html_cd69a369634af836fca3f86d6adf5399" style="width: 100.0%; height: 100.0%;">SOPACDI: 120kg @ 8,90€/kg</div>`)[0];
+                popup_2e339276a0d51011c9302cf611e79f92.setContent(html_cd69a369634af836fca3f86d6adf5399);
+            
+        
+
+        circle_marker_3cb9fd2cb148ca9adc87a205ffeaffd7.bindPopup(popup_2e339276a0d51011c9302cf611e79f92)
+        ;
+
+        
+    
+    
+            var circle_marker_debbc26095ca7a5535deebada38c3543 = L.circleMarker(
+                [0.792869, 34.565438],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "mediumseagreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.199999999999999, "stroke": true, "weight": 3}
+            ).addTo(map_809a6ec438d204a2ad2c806630d1f42a);
+        
+    
+        var popup_abe4e66a8e6db24937d1c826f74b1e84 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7cc1f734e889fcf9c5c3cdf11d6b8c89 = $(`<div id="html_7cc1f734e889fcf9c5c3cdf11d6b8c89" style="width: 100.0%; height: 100.0%;">Kikai: 88kg @ 11,80€/kg</div>`)[0];
+                popup_abe4e66a8e6db24937d1c826f74b1e84.setContent(html_7cc1f734e889fcf9c5c3cdf11d6b8c89);
+            
+        
+
+        circle_marker_debbc26095ca7a5535deebada38c3543.bindPopup(popup_abe4e66a8e6db24937d1c826f74b1e84)
+        ;
+
+        
+    
+    
+            var circle_marker_5833c050f62df5711b3b90be3a25817a = L.circleMarker(
+                [5.034336, -75.523132],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "mediumseagreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.0, "stroke": true, "weight": 3}
+            ).addTo(map_809a6ec438d204a2ad2c806630d1f42a);
+        
+    
+        var popup_bc588f457133cfed92fc461f62ab3148 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6fef303a0e437e4c02dc4a1bee66cfcf = $(`<div id="html_6fef303a0e437e4c02dc4a1bee66cfcf" style="width: 100.0%; height: 100.0%;">Villamaria: 196kg @ 10,50€/kg</div>`)[0];
+                popup_bc588f457133cfed92fc461f62ab3148.setContent(html_6fef303a0e437e4c02dc4a1bee66cfcf);
+            
+        
+
+        circle_marker_5833c050f62df5711b3b90be3a25817a.bindPopup(popup_bc588f457133cfed92fc461f62ab3148)
+        ;
+
+        
+    
+    
+            var circle_marker_8a5325eaa7f519e28f1308e7b8714c55 = L.circleMarker(
+                [22.241308, 99.387648],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "mediumseagreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 3}
+            ).addTo(map_809a6ec438d204a2ad2c806630d1f42a);
+        
+    
+        var popup_b282b133d26ef467d5c540b4dc6c17f5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_79aedafc696b38d0ec424bf0f795a110 = $(`<div id="html_79aedafc696b38d0ec424bf0f795a110" style="width: 100.0%; height: 100.0%;">Xingang: 50kg @13€/kg</div>`)[0];
+                popup_b282b133d26ef467d5c540b4dc6c17f5.setContent(html_79aedafc696b38d0ec424bf0f795a110);
+            
+        
+
+        circle_marker_8a5325eaa7f519e28f1308e7b8714c55.bindPopup(popup_b282b133d26ef467d5c540b4dc6c17f5)
+        ;
+
+        
+    
+</script>
+</html>
