@@ -5,6 +5,7 @@ m = folium.Map()
 # import the library
 import folium
 
+
 # Make an empty map
 m = folium.Map(location=[0,19], tiles="OpenStreetMap", zoom_start=2.75)
 
@@ -42,8 +43,43 @@ for i in range(0,len(data)):
 # Show the map again
 m
 
+
+
+from folium.features import DivIcon
+import folium
+
+folium.map.Marker(
+    [-37.133970, -76.300117],
+    icon=DivIcon(
+        icon_size=(1500,1500),
+        icon_anchor=(0,0),
+      	
+        html='<div style="font-size: 30pt">  <b> Geographic origin of coffees purchased by Vote in 2022 </div>',
+        )
+    ).add_to(m)
+
+folium.map.Marker(
+    [36.570381, -60.502553],
+    icon=DivIcon(
+        icon_size=(250,36),
+        icon_anchor=(0,0),
+      	
+        html='<div style="font-size: 14pt">  <b> How to use the map: <br> Zoom in on different regions and click on the circles to see more details about the coffees. </div>',
+        )
+    ).add_to(m)
+folium.map.Marker(
+    [-12.570381, 60.502553],
+    icon=DivIcon(
+        icon_size=(250,50),
+        icon_anchor=(0,0),
+        html='<div style="font-size: 14pt"><b> <b> Note: <b> <br> The area of each circle reflects the size of each purchase in volume.</div>',
+        )
+    ).add_to(m)
+
+
 m.save("footprint.html")
 
+m
 
 
 
